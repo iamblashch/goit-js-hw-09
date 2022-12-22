@@ -19,6 +19,7 @@ function createPromise(position, delay) {
 }
 
 const submitHandler = e => {
+
   e.preventDefault();
   if (!e.target.tagName === 'BUTTON') return;
 
@@ -44,4 +45,5 @@ const submitHandler = e => {
 
   e.currentTarget.reset();
 };
+  console.log(submitHandler)
 formEl.addEventListener('submit', submitHandler);
