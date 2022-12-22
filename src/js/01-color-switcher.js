@@ -6,7 +6,7 @@ const refs = {
     stopEl: document.querySelector('button[data-stop]'),
 }
 
-refs.stopEl.disabled = true;
+// refs.stopEl.disabled = true;
 let intervalID = null;
 
 const randomBodyColorGenerator = {
@@ -20,7 +20,7 @@ const randomBodyColorGenerator = {
     intervalID = setInterval(() => {
       changeBgColorRandom();
     }, this.DELAY);
-    refs.stopEl.disabled = false;
+    // refs.stopEl.disabled = false;
   },
 
   start() {
