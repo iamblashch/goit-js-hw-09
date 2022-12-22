@@ -31,7 +31,7 @@ const submitHandler = e => {
   stepInp = Number(step.value);
   amountInp = Number(amount.value);
 
-  for (let i = 1; i <= amountInp; i++) {
+  for (let i = 1; i <= amountInp; i += 1) {
     createPromise(i, delayInp)
       .then(({ position, delay }) => {
         Notify.success(`✅ Fulfilled promise ${position} in ${delay}ms`);
@@ -46,4 +46,4 @@ const submitHandler = e => {
   e.currentTarget.reset();
 };
   console.log(submitHandler)
-formEl.addEventListener('submit', submitHandler);
+formEl.addEventListener('sumbit', submitHandler);
